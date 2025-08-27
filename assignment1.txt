@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Flexbox & Grid Example</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>My Responsive Website</h1>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <section class="intro">
+      <h2>Welcome</h2>
+      <p>This page demonstrates responsive design using Flexbox, Grid, and media queries.</p>
+    </section>
+
+    <section class="grid-section">
+      <h2>Our Services</h2>
+      <div class="grid-container">
+        <div class="grid-item">🌐 Web Design</div>
+        <div class="grid-item">📱 Mobile Apps</div>
+        <div class="grid-item">☁️ Cloud Solutions</div>
+        <div class="grid-item">🔒 Cybersecurity</div>
+      </div>
+    </section>
+
+    <section class="flex-section">
+      <h2>Team Members</h2>
+      <div class="flex-container">
+        <div class="flex-item">👩‍💻 Alice</div>
+        <div class="flex-item">👨‍💻 Bob</div>
+        <div class="flex-item">🧑‍💻 Charlie</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 My Responsive Website</p>
+  </footer>
+</body>
+</html>

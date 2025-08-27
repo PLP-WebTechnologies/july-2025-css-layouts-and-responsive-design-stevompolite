@@ -1,0 +1,127 @@
+/* =====================
+   Global Styles
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* =====================
+   Header & Navigation
+===================== */
+.site-header {
+  background: #4CAF50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* =====================
+   Main Content
+===================== */
+.main-content {
+  padding: 2rem;
+}
+
+.intro {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Grid Section */
+.grid-section {
+  margin-bottom: 2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.grid-item {
+  background: #f2f2f2;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* Flex Section */
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.flex-item {
+  background: #e3f2fd;
+  padding: 1.5rem;
+  border: 1px solid #90caf9;
+  border-radius: 8px;
+  text-align: center;
+  flex: 1 1 150px;
+}
+
+/* =====================
+   Footer
+===================== */
+.site-footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* =====================
+   Responsive Media Queries
+===================== */
+
+/* Mobile-first (default styles above) */
+
+/* Tablets */
+@media (min-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Desktops */
+@media (min-width: 900px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .navbar ul {
+    justify-content: flex-end;
+  }
+
+  .site-header {
+    text-align: left;
+    padding: 1rem 2rem;
+  }
+}
